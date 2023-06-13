@@ -1,0 +1,15 @@
+Description: fix typo
+Author: Florian Schlichting <fsfs@debian.org>
+Forwarded: yes (RT)
+
+--- a/lib/FCGI/ProcManager.pm
++++ b/lib/FCGI/ProcManager.pm
+@@ -179,7 +179,7 @@
+ When this is called by a FastCGI script to manage application servers.  It
+ defines a sequence of instructions for a process to enter this method and
+ begin forking off and managing those handlers, and it defines a sequence of
+-instructions to intialize those handlers.
++instructions to initialize those handlers.
+ 
+ If n_processes < 1, the managing section is subverted, and only the
+ handling sequence is executed.

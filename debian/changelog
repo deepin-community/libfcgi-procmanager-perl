@@ -1,5 +1,172 @@
-template-repository (1.0-1) unstable; urgency=medium
+libfcgi-procmanager-perl (0.28-3) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + libfcgi-procmanager-perl: Add Multi-Arch: foreign.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Thu, 13 Oct 2022 21:09:24 +0100
+
+libfcgi-procmanager-perl (0.28-2) unstable; urgency=medium
+
+  [ Alex Muntada ]
+  * Remove inactive pkg-perl members from Uploaders.
+
+  [ Damyan Ivanov ]
+  * declare conformance with Policy 4.1.3 (no changes needed)
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Laurent Baillet ]
+  * fix lintian file-contains-trailing-whitespace warning
+
+  [ gregor herrmann ]
+  * debian/watch: use uscan version 4.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 13 Jun 2022 22:01:26 +0100
+
+libfcgi-procmanager-perl (0.28-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Fri, 01 Jan 2021 18:19:00 +0100
+
+libfcgi-procmanager-perl (0.28-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+
+  [ Florian Schlichting ]
+  * Import upstream version 0.28
+  * Bump dh compat to level 9
+  * Fix spelling error (thanks lintian)
+  * Declare compliance with Debian Policy 4.1.0
+
+ -- Florian Schlichting <fsfs@debian.org>  Mon, 18 Sep 2017 23:12:38 +0200
+
+libfcgi-procmanager-perl (0.25-1) unstable; urgency=low
+
+  * Team upload
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Axel Beckert ]
+  * debian/copyright: migrate pre-1.0 format to 1.0 using "cme fix dpkg-
+    copyright"
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ Florian Schlichting ]
+  * Add debian/upstream/metadata
+  * Import upstream version 0.25
+  * Declare compliance with Debian Policy 3.9.6
+  * Mark package autopkgtest-able
+
+ -- Florian Schlichting <fsfs@debian.org>  Fri, 11 Sep 2015 23:22:37 +0200
+
+libfcgi-procmanager-perl (0.24-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 05 Oct 2011 18:29:53 +0200
+
+libfcgi-procmanager-perl (0.23-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump debhelper compatibility level to 8.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 30 Sep 2011 17:25:01 +0200
+
+libfcgi-procmanager-perl (0.22-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ Ansgar Burchardt ]
+  * New upstream release.
+  * debian/control: Convert Vcs-* fields to Git.
+  * Bump Standards-Version to 3.9.2 (no changes).
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+
+ -- Ansgar Burchardt <ansgar@debian.org>  Wed, 10 Aug 2011 09:36:46 +0200
+
+libfcgi-procmanager-perl (0.19-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+    + Changes process title on startup
+  * Add myself to uploaders and copyright
+  * Update to debhelper 7 short rules
+  * Update copyright information, use machine readable copyright
+  * Rewrite the description
+  * Bumped compat to 7
+
+  [ gregor herrmann ]
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+  * Switch to source format 3.0 (quilt).
+  * Set Standards-Version to 3.9.1; remove version from perl build dependency.
+  * debian/copyright: update formatting and license stanzas.
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Ryan Niebur ]
+  * Update jawnsy's email address
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 12 Feb 2011 21:17:45 +0100
+
+libfcgi-procmanager-perl (0.18-2) unstable; urgency=low
+
+  * debian/rules: delete /usr/lib/perl5 only if it exists (closes: #467787).
+  * Add /me to Uploaders.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Sat, 08 Mar 2008 01:53:48 +0100
+
+libfcgi-procmanager-perl (0.18-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza). Removed: XS-
+    Vcs-Svn fields.
+  * Set Standards-Version to 3.7.3 (no changes needed).
+  * Set debhelper compatibility level to 5.
+  * debian/watch: use dist-based URL.
+  * debian/copyright:
+    - use generic download URL
+    - add information about current upstream maintainer
+  * debian/rules:
+    - remove OPTIMIZE, this is an arch-independent package
+    - move tests to build target
+    - let install-stamp target depend on build-stamp
+    - move dh_clean before make realclean
+    - remove dh_link and dh_strip
+  * Remove trailing full stop from short package description.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Wed, 26 Dec 2007 01:05:53 +0100
+
+libfcgi-procmanager-perl (0.17-1) unstable; urgency=low
+
+  * Initial Release (closes: #348683).
+
+ -- Krzysztof Krzyzaniak (eloy) <eloy@debian.org>  Wed, 18 Jan 2006 12:44:53 +0100
